@@ -16,3 +16,7 @@ Seamless Discord Integration: In addition to sending emails, our app allows you 
 Our Mailing List Manager App is perfect for businesses, organizations, community groups, and individuals looking to streamline their communication efforts. Keep your subscribers informed, engaged, and connected with our reliable and feature-rich app.
 
 Start building your mailing lists and sending impactful messages today. Try our Mailing List Manager App now!
+
+
+![image](https://github.com/UBOS-tech/marketing-portal-ui/assets/87094132/d92da396-1e32-4e7f-8b1a-7dd9a63e9511)
+![image](https://github.com/UBOS-tech/marketing-portal-ui/assets/87094132/ac48cf5d-4b9d-4230-859a-628e014deb74)
