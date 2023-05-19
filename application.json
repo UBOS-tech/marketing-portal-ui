@@ -1,0 +1,58 @@
+{
+    "_id": "6461e923b9568baa446e77e4",
+    "name": "uieditor-3513",
+    "slug": "uieditor-3513",
+    "organizationId": "Org",
+    "isPublic": true,
+    "isMenu": false,
+    "createdAt": "2023-05-15T08:11:15.121Z",
+    "updatedAt": "2023-05-18T17:49:26.108Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "Send Messages",
+            "isDefault": true
+        },
+        {
+            "_id": "Customer Data",
+            "isDefault": false
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "global_setting": {
+        "css": ""
+    },
+    "settings_data": {
+        "httpIns": []
+    },
+    "is_custom_auth": false,
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/UBOS-tech/marketing-portal-ui",
+        "defaultApplicationId": "uieditor-3513",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:UBOS-tech/marketing-portal-ui.git",
+        "repoName": "marketing-portal-ui"
+    }
+}

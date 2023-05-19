@@ -1,0 +1,308 @@
+[
+    {
+        "id": "6464c30e7376e7c2f298acc2",
+        "name": "JSObject1",
+        "pageId": "Send Messages",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\nlet ids = Table2.selectedRows.map(a => a.CustomerID)\nreturn ids\n},\n\tmyFun2:  () => {\nconst emails = Table1.selectedRows.map(e => e.CustomerEmailID)\t\nreturn emails\n},\n\t\tmyFun3: () => {\nlet ids = Table2Copy.selectedRows.map(a => a.CustomerID)\nreturn ids\n},\n\tsendMessages: () => {\n\t\tif(disk.isSwitchedOn){\n\t\t\tDisk.run();\n\t\t\tconst successMessage1 =\"Discord Message sent to \".concat(List1.selectedItem.Mailinglist).concat(\" server\") \n\t\t\tshowAlert(successMessage1,'success');\n\t\t\t}\n\t\tif(emailsw.isSwitchedOn){\n\t\t\tsendMail.run();\n\t\t\tconst successMessage2 =\"Email sent to users on \".concat(List1.selectedItem.Mailinglist).concat(\" list\") \n\t\t\tshowAlert(successMessage2,'success');\n\t\t}\n\t\tresetWidget(\"Modal2\");\n\t\tcloseModal(\"Modal2\");\n\t},\n\t\tsendMessagesAI: () => {\n\t\tif(diskai.isSwitchedOn){\n\t\t\tDisc2.run();\n\t\t\tconst successMessage1 =\"Discord Message sent to \".concat(List1.selectedItem.Mailinglist).concat(\" server\") \n\t\t\tshowAlert(successMessage1,'success');\n\t\t\t}\n\t\tif(emailai.isSwitchedOn){\n\t\t\tsendEmail2.run();\n\t\t\tconst successMessage2 =\"Email sent to users on \".concat(List1.selectedItem.Mailinglist).concat(\" list\") \n\t\t\tshowAlert(successMessage2,'success');\n\t\t}\n\t\tresetWidget(\"Modal3\");\n\t\tcloseModal(\"Modal3\");\n\t},\n}",
+        "variables": [
+            {
+                "name": "myVar1",
+                "value": []
+            },
+            {
+                "name": "myVar2",
+                "value": {}
+            }
+        ],
+        "actions": [
+            {
+                "name": "myFun1",
+                "pageId": "Send Messages",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\nlet ids = Table2.selectedRows.map(a => a.CustomerID)\nreturn ids\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6464c30e7376e7c2f298acc3",
+                "id": "6464c30e7376e7c2f298acc3",
+                "collectionId": "6464c30e7376e7c2f298acc2",
+                "confirmBeforeExecute": false,
+                "applicationId": "uieditor-3513",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun1",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun2",
+                "pageId": "Send Messages",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\nconst emails = Table1.selectedRows.map(e => e.CustomerEmailID)\t\nreturn emails\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6464c30e7376e7c2f298acc4",
+                "id": "6464c30e7376e7c2f298acc4",
+                "collectionId": "6464c30e7376e7c2f298acc2",
+                "confirmBeforeExecute": false,
+                "applicationId": "uieditor-3513",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun3",
+                "collectionId": "6464c30e7376e7c2f298acc2",
+                "executeOnLoad": false,
+                "pageId": "Send Messages",
+                "actionConfiguration": {
+                    "body": "() => {\nlet ids = Table2Copy.selectedRows.map(a => a.CustomerID)\nreturn ids\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "64663ab57376e7c2f298acd2",
+                "id": "64663ab57376e7c2f298acd2",
+                "applicationId": "uieditor-3513",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun3",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\nlet ids = Table2.selectedRows.map(a => a.CustomerID)\nreturn ids\n}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "sendMessages",
+                "collectionId": "6464c30e7376e7c2f298acc2",
+                "executeOnLoad": false,
+                "pageId": "Send Messages",
+                "actionConfiguration": {
+                    "body": "() => {\n\t\tif(disk.isSwitchedOn){\n\t\t\tDisk.run();\n\t\t\tconst successMessage1 =\"Discord Message sent to \".concat(List1.selectedItem.Mailinglist).concat(\" server\") \n\t\t\tshowAlert(successMessage1,'success');\n\t\t\t}\n\t\tif(emailsw.isSwitchedOn){\n\t\t\tsendMail.run();\n\t\t\tconst successMessage2 =\"Email sent to users on \".concat(List1.selectedItem.Mailinglist).concat(\" list\") \n\t\t\tshowAlert(successMessage2,'success');\n\t\t}\n\t\tresetWidget(\"Modal2\");\n\t\tcloseModal(\"Modal2\");\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "646707747376e7c2f298acd6",
+                "id": "646707747376e7c2f298acd6",
+                "applicationId": "uieditor-3513",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.sendMessages",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\tif(DiscordSwitch.isSwitchedOn){\n\t\t\tDiscordAPI.run();\n\t\t\tconst successMessage1 =\"Discord Message sent to \".concat(List1.selectedItem.Mailinglist).concat(\" server\") \n\t\t\tshowAlert(successMessage1,'success');\n\t\t\t}\n\t\tif(EmailSwitch.isSwitchedOn){\n\t\t\tSendEmail.run();\n\t\t\tconst successMessage2 =\"Email sent to users on \".concat(List1.selectedItem.Mailinglist).concat(\" list\") \n\t\t\tshowAlert(successMessage2,'success');\n\t\t}\n\t\tresetWidget(\"MessageModal\");\n\t\tcloseModal(\"MessageModal\");\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "sendMessagesAI",
+                "collectionId": "6464c30e7376e7c2f298acc2",
+                "executeOnLoad": false,
+                "pageId": "Send Messages",
+                "actionConfiguration": {
+                    "body": "() => {\n\t\tif(diskai.isSwitchedOn){\n\t\t\tDisc2.run();\n\t\t\tconst successMessage1 =\"Discord Message sent to \".concat(List1.selectedItem.Mailinglist).concat(\" server\") \n\t\t\tshowAlert(successMessage1,'success');\n\t\t\t}\n\t\tif(emailai.isSwitchedOn){\n\t\t\tsendEmail2.run();\n\t\t\tconst successMessage2 =\"Email sent to users on \".concat(List1.selectedItem.Mailinglist).concat(\" list\") \n\t\t\tshowAlert(successMessage2,'success');\n\t\t}\n\t\tresetWidget(\"Modal3\");\n\t\tcloseModal(\"Modal3\");\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "646709b67376e7c2f298acd7",
+                "id": "646709b67376e7c2f298acd7",
+                "applicationId": "uieditor-3513",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.sendMessagesAI",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\tif(disk.isSwitchedOn){\n\t\t\tDisk.run();\n\t\t\tconst successMessage1 =\"Discord Message sent to \".concat(List1.selectedItem.Mailinglist).concat(\" server\") \n\t\t\tshowAlert(successMessage1,'success');\n\t\t\t}\n\t\tif(emailsw.isSwitchedOn){\n\t\t\tsendMail.run();\n\t\t\tconst successMessage2 =\"Email sent to users on \".concat(List1.selectedItem.Mailinglist).concat(\" list\") \n\t\t\tshowAlert(successMessage2,'success');\n\t\t}\n\t\tresetWidget(\"MessageModal\");\n\t\tcloseModal(\"MessageModal\");\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "uieditor-3513",
+        "pluginType": "JS",
+        "_id": "6464c30e7376e7c2f298acc2",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "6464e7967376e7c2f298accc",
+        "name": "JSObject1",
+        "pageId": "Customer Data",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\nlet check =  Switch1.isSwitchedOn?1:0\nreturn check\n},\n\tmyFun2: () => {\nlet check =  Switch2.isSwitchedOn?1:0\nreturn check\n\t}\n}",
+        "variables": [
+            {
+                "name": "myVar1",
+                "value": []
+            },
+            {
+                "name": "myVar2",
+                "value": {}
+            }
+        ],
+        "actions": [
+            {
+                "name": "myFun1",
+                "pageId": "Customer Data",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\nlet check =  Switch1.isSwitchedOn?1:0\nreturn check\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6464e7967376e7c2f298accd",
+                "id": "6464e7967376e7c2f298accd",
+                "collectionId": "6464e7967376e7c2f298accc",
+                "confirmBeforeExecute": false,
+                "applicationId": "uieditor-3513",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun1",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun2",
+                "pageId": "Customer Data",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\nlet check =  Switch2.isSwitchedOn?1:0\nreturn check\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "6464e7967376e7c2f298acce",
+                "id": "6464e7967376e7c2f298acce",
+                "collectionId": "6464e7967376e7c2f298accc",
+                "confirmBeforeExecute": false,
+                "applicationId": "uieditor-3513",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "uieditor-3513",
+        "pluginType": "JS",
+        "_id": "6464e7967376e7c2f298accc"
+    }
+]
